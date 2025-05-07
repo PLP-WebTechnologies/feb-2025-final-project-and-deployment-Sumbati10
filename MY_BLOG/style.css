@@ -1,32 +1,71 @@
+/* Global Styles */
 body {
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  background-color: #fff;
+  background-color: #f9f9f9;
   color: #333;
-  transition: background-color 0.3s, color 0.3s;
 }
 
-header, footer {
-  background-color: #333;
+header {
+  background-color: #2c3e50;
   color: white;
-  padding: 1em;
+  padding: 20px;
   text-align: center;
+}
+
+header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 nav a {
   color: white;
-  margin: 0 10px;
+  margin: 0 15px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 main {
-  padding: 1em;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.dark-mode {
-  background-color: #121212;
-  color: #eee;
+/* Featured Products Section */
+.featured-products {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.product-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 30%;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card a {
+  text-decoration: none;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .featured-products {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 

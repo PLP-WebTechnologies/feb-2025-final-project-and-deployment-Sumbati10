@@ -1,14 +1,22 @@
-// Theme toggle using localStorage
-const btn = document.getElementById('toggleTheme');
+$(document).ready(function () {
+  $("a").on("click", function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
 
-if (localStorage.getItem('darkMode') === 'true') {
-  document.body.classList.add('dark-mode');
-}
-
-if (btn) {
-  btn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+      var hash = this.hash;
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        800,
+        function () {
+          window.location.hash = hash;
+        }
+      );
+    }
   });
-}
+});
 
+$(".menu-items a").click(function () {
+  $("#checkbox").prop("checked", false);
+});

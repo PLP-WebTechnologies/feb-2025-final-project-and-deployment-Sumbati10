@@ -1,60 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cake Shop</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Delicious Cakes</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="product.html">Products</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <h2>Welcome to the best cake shop!</h2>
-      <p>Delicious cakes made fresh daily. Order your favorite cake today!</p>
+    <section class="top-text">
+        <div class="head container">
+            <div class="head-text">
+                <p>Free shipping, 30-day return or refund guarantee.</p>
+            </div>
+            <div class="sign-in-up">
+                <a href="#">SIGN IN</a>
+                <a href="#">SIGN UP</a>
+            </div>
+        </div>
     </section>
 
-    <section class="featured-products">
-      <h2>Our Featured Cakes</h2>
-      <div class="product-card">
-        <img src="images/cake1.jpg" alt="Chocolate Cake" />
-        <h3>Chocolate Cake</h3>
-        <p>A rich and moist chocolate cake. Perfect for any occasion!</p>
-        <a href="product.html">View Details</a>
-      </div>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <input type="checkbox" id="checkbox">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sellers">Shop</a></li>
+                <li><a href="#news">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="logo">
+                <img src="https://i.postimg.cc/TP6JjSTt/logo.webp" alt="Logo">
+            </div>
+        </div>
+    </nav>
 
-      <div class="product-card">
-        <img src="images/cake2.jpg" alt="Strawberry Cake" />
-        <h3>Strawberry Cake</h3>
-        <p>Sweet, tangy, and delicious with fresh strawberries.</p>
-        <a href="product.html">View Details</a>
-      </div>
-
-      <div class="product-card">
-        <img src="images/cake3.jpg" alt="Vanilla Cake" />
-        <h3>Vanilla Cake</h3>
-        <p>A classic and elegant vanilla cake, light and fluffy.</p>
-        <a href="product.html">View Details</a>
-      </div>
+    <section id="home">
+        <div class="home-page">
+            <div class="home-img">
+                <img src="https://i.postimg.cc/t403yfn9/home2.jpg" alt="Home Image">
+            </div>
+            <div class="home-text">
+                <p class="collection">SUMMER COLLECTION</p>
+                <h2>FALL - WINTER<br>Collection 2023</h2>
+                <div class="home-label">
+                    <p>A specialist label creating luxury essentials. Ethically crafted<br>with an unwavering commitment to exceptional quality.</p>
+                </div>
+                <a href="#sellers" class="btn">SHOP NOW</a>
+                <div class="home-social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-pinterest'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Cake Shop. All rights reserved.</p>
-  </footer>
+    <section id="collection">
+        <div class="collections container">
+            <div class="content">
+                <img src="https://i.postimg.cc/Xqmwr12c/clothing.webp" alt="Clothing" />
+                <div class="img-content">
+                    <p>Clothing Collections</p>
+                    <a href="#sellers" class="btn">SHOP NOW</a>
+                </div>
+            </div>
+            <div class="content2">
+                <img src="https://i.postimg.cc/8CmBZH5N/shoes.webp" alt="Shoes" />
+                <div class="img-content2">
+                    <p>Shoes Spring</p>
+                    <a href="#sellers" class="btn">SHOP NOW</a>
+                </div>
+            </div>
+            <div class="content3">
+                <img src="https://i.postimg.cc/MHv7KJYp/access.webp" alt="Accessories" />
+                <div class="img-content3">
+                    <p>Accessories</p>
+                    <a href="#sellers" class="btn">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <section id="sellers">
+        <div class="seller container">
+            <h2>Top Sales</h2>
+            <div class="best-seller">
+                <div class="best-p1">
+                    <img src="https://i.postimg.cc/8CmBZH5N/shoes.webp" alt="Product">
+                    <div class="best-p1-text">
+                        <p>PS England Shoes</p>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                        <div class="price">
+                            $37.24
+                            <div class="colors">
+                                <i class='bx bxs-circle red'></i>
+                                <i class='bx bxs-circle blue'></i>
+                                <i class='bx bxs-circle white'></i>
+                            </div>
+                        </div>
+                        <a href="https://codepen.io/sanketbodke/full/mdprZOq" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
 
